@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container" id="container">
+      <div class="sign-up" data-aos="fade-down" data-aos-duration="1500">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers raceiving monthly updates on:</p>
+        <div class="sign-up-list">
+          <div class="sign-up-list-item">
+            <img src="./assets/images/icon-success.svg" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="sign-up-list-item">
+            <img src="./assets/images/icon-success.svg" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="sign-up-list-item">
+            <img src="./assets/images/icon-success.svg" />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <div class="sign-up-email">
+          <div class="sign-up-email-title">
+            <label for="email">Email address</label>
+            <span id="isValid" class="hidden">Valid email required</span>
+          </div>
+          <input
+            value=""
+            id="err"
+            type="email"
+            name="email"
+            placeholder="use: yourmail@gmail.com"
+            class=""
+          />
+        </div>
+
+        <button class="sign-up-button" id="subscribe">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div class="image" data-aos="fade-up" data-aos-duration="1500"></div>
+    </div>
+
+    <!-- Sign-up form end -->
+    <div class="success hidden " id="success">
+      <img src="./assets/images/icon-success.svg" />
+      <h2>Thanks for subscribing</h2>
+      <p>
+        A Confirmation email has been sent to <span id="currentEmail"></span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="sign-up-button" id="thanks">Dismiss message</button>
+    </div>
+
+    <!-- Success message start -->
+
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
+
+    <!-- Success message end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
