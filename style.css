@@ -24,12 +24,11 @@ body {
   text-align: center;
   border-bottom: 1px solid gray;
   width: 100%;
-  height: clamp(10rem, 20vh, 20vh);
-  padding-bottom: clamp(1rem, 3vw, 3vw);
+  height: clamp(8rem, 20vh, 20vh);
 }
 
 .container-header h1 {
-  font-size: clamp(3rem, 3vw, 3vw);
+  font-size: clamp(1.5rem, 3vw, 3vw);
   text-shadow: 3px 3px 10px black;
   background-image: linear-gradient(to right, #ff8a00, #e52e71);
   color: transparent;
@@ -46,7 +45,7 @@ body {
 }
 .container-grid {
   padding-inline: clamp(1rem, 5vw, 5vw);
-  padding-top: clamp(1rem, 3vw, 3vw);
+  padding-top: clamp(3rem, 3vw, 3vw);
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
@@ -74,7 +73,9 @@ img {
   height: 100%;
   border-radius: 1em;
 }
-
+.grid-item {
+  box-shadow: 3px 3px 10px gray;
+}
 .grid-item-title {
   position: absolute;
   display: flex;
@@ -113,5 +114,11 @@ img {
   .container-grid {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .item-1 {
+    margin-bottom: 0;
+  }
+  .item-2 {
+    margin-top: 0;
   }
 }
