@@ -21,7 +21,7 @@ function showInputValue() {
   } else {
     inputElement.classList.remove("error");
     isValid.classList.remove("shown");
-
+    document.getElementById("container").style.display = "none";
     container.classList.add("hidden");
     subscribe.classList.remove("hidden");
 
@@ -32,4 +32,5 @@ function showInputValue() {
 subscribe.addEventListener("click", returnToPrevPage);
 function returnToPrevPage() {
   container.classList.remove("hidden");
+  document.getElementById("container").style.display = "flex";
 }

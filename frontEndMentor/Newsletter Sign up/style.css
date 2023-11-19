@@ -8,6 +8,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   background: rgb(255, 88, 108);
   background: radial-gradient(
@@ -167,12 +172,15 @@ body {
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {
+  
   .container {
     display: flex;
     flex-direction: column;
     padding: 0;
     width: 100vw;
     border-radius: 0;
+    z-index: 10;
+    height: 100vh;
   }
   .sign-up {
     order: 2;
