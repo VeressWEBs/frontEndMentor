@@ -154,7 +154,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: clamp(1rem, 1vw, 1vw);
-  width: clamp(15rem, 25vw, 25vw);
+  width: clamp(15rem, 30vw, 30vw);
   position: absolute;
 }
 
@@ -172,7 +172,10 @@ body {
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {
-  
+  .success {
+    width: clamp(15rem, 80vw, 80vw);
+
+  }
   .container {
     display: flex;
     flex-direction: column;
